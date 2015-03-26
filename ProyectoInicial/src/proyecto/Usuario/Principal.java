@@ -1,6 +1,6 @@
 package proyecto.Usuario;
 
-
+//Sergio
 
 import java.awt.Color;
 
