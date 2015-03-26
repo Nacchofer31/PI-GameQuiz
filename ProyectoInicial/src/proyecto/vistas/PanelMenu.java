@@ -38,7 +38,7 @@ public class PanelMenu extends JPanel {
 				c.show(downPanel, "Panel1");
 			}
 		});
-		upPanel.setLayout(new MigLayout("", "[57px][69px][67px][57px][75px][77px]", "[23px]"));
+		upPanel.setLayout(new MigLayout("", "[57px][69px][67px][57px][75px][][77px]", "[23px]"));
 		upPanel.add(btn, "cell 0 0,alignx left,aligny center");
 		
 		
@@ -61,6 +61,17 @@ public class PanelMenu extends JPanel {
 				c.show(downPanel, "Panel3");
 			}
 		});
+		
+		
+		//Boton5
+		btn5 = new JButton("Consolas");
+		btn5.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				CardLayout c= (CardLayout)downPanel.getLayout();
+				c.show(downPanel, "Panel5");
+			}
+		});
+		upPanel.add(btn5, "flowx,cell 2 0,alignx left,aligny center");
 		upPanel.add(btn3, "cell 2 0,alignx left,aligny center");
 		
 		
@@ -73,17 +84,6 @@ public class PanelMenu extends JPanel {
 			}
 		});
 		upPanel.add(btn4, "cell 3 0,alignx left,aligny center");
-		
-		
-		//Boton5
-		btn5 = new JButton("Cat\u00E1logo");
-		btn5.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				CardLayout c= (CardLayout)downPanel.getLayout();
-				c.show(downPanel, "Panel5");
-			}
-		});
-		upPanel.add(btn5, "cell 4 0,alignx left,aligny center");
 		
 		
 		//Boton6
@@ -119,7 +119,7 @@ public class PanelMenu extends JPanel {
 		downPanel.add(downPanel3, "Panel3");
 		downPanel3.setLayout(null);
 		
-		lblTerceraPantalla = new JLabel("Te encuentras en la p\u00E1gina Juegos");
+		lblTerceraPantalla = new JLabel("Te encuentras en la pagina Juegos");
 		lblTerceraPantalla.setBounds(50, 25, 230, 14);
 		downPanel3.add(lblTerceraPantalla);
 		
@@ -135,7 +135,7 @@ public class PanelMenu extends JPanel {
 		downPanel.add(downPanel5, "Panel5");
 		downPanel5.setLayout(null);
 		
-		lblQuintaPantalla = new JLabel("Te encuentras en la pantalla de Cat\u00E1logo");
+		lblQuintaPantalla = new JLabel("Te encuentras en la pagina de Consolas");
 		lblQuintaPantalla.setBounds(60, 32, 259, 14);
 		downPanel5.add(lblQuintaPantalla);
 
