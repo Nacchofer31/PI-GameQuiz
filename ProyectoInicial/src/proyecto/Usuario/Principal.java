@@ -4,16 +4,17 @@ package proyecto.Usuario;
 
 import java.awt.Color;
 
-import com.thehowtotutorial.splashscreen.JSplash;
+import proyecto.vistas.PantallaPrincipal;
 
-import proyecto.vistas.PantMenu;
+import com.thehowtotutorial.splashscreen.JSplash;
 
 public class Principal {
 
 
 	public static void main(String[] args) {
 		pantallaCarga();
-		PantMenu frame = new PantMenu();
+		//PantMenu frame = new PantMenu();
+		PantallaPrincipal frame = new PantallaPrincipal();
 		frame.setVisible(true);
 	}
 	
