@@ -151,9 +151,9 @@ public class PantallaPrincipal extends JFrame {
 		//IMAGEN DE FONDO
 		Image iFondo = new ImageIcon(this.getClass().getResource("/Fondo.png")).getImage();
 		imgFondo = new JLabel("/Fondo.png");
-		imgFondo.setBounds(0, 0, 800, 465);
+		imgFondo.setBounds(0, 0, 800, 600);
 		imgFondo.setIcon(new ImageIcon(iFondo));
-		pI.add(imgFondo);
-	
+		panelPantallas.add(imgFondo);
+		
 	}
 }
