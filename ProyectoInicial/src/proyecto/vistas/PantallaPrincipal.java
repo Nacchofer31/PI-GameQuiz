@@ -1,12 +1,15 @@
 package proyecto.vistas;
 
 import java.awt.CardLayout;
+import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JLabel;
 
 public class PantallaPrincipal extends JFrame {
 
@@ -32,7 +35,7 @@ public class PantallaPrincipal extends JFrame {
 		
 		// JPanel para las pantallas
 		JPanel panelPantallas = new JPanel();
-		panelPantallas.setBounds(0, 43, 794, 529);
+		panelPantallas.setBounds(0, 106, 794, 466);
 		contentPane.add(panelPantallas);
 		this.setResizable(false);
 		panelPantallas.setLayout(new CardLayout(0, 0));
@@ -57,7 +60,7 @@ public class PantallaPrincipal extends JFrame {
 		
 		// JPanel para los botones
 		JPanel panelBotones = new JPanel();
-		panelBotones.setBounds(0, 0, 794, 43);
+		panelBotones.setBounds(0, 0, 794, 84);
 		contentPane.add(panelBotones);
 		panelBotones.setLayout(null);
 		
@@ -69,7 +72,7 @@ public class PantallaPrincipal extends JFrame {
 				c.show(panelPantallas, "PanelInicio");
 			}
 		});
-		btnInicio.setBounds(10, 11, 89, 23);
+		btnInicio.setBounds(113, 25, 89, 23);
 		panelBotones.add(btnInicio);
 		
 		//Boton Historia
@@ -80,7 +83,7 @@ public class PantallaPrincipal extends JFrame {
 				c.show(panelPantallas, "PanelHistoria");
 			}
 		});
-		btnHistoria.setBounds(109, 11, 89, 23);
+		btnHistoria.setBounds(212, 25, 89, 23);
 		panelBotones.add(btnHistoria);
 		
 		//Boton Consolas
@@ -91,7 +94,7 @@ public class PantallaPrincipal extends JFrame {
 				c.show(panelPantallas, "PanelConsolas");
 			}
 		});
-		btnConsolas.setBounds(208, 11, 89, 23);
+		btnConsolas.setBounds(311, 25, 89, 23);
 		panelBotones.add(btnConsolas);
 		
 		//Boton Juegos
@@ -102,7 +105,7 @@ public class PantallaPrincipal extends JFrame {
 				c.show(panelPantallas, "PanelJuegos");
 			}
 		});
-		btnJuegos.setBounds(307, 11, 89, 23);
+		btnJuegos.setBounds(410, 25, 89, 23);
 		panelBotones.add(btnJuegos);
 		
 		//Boton Quiz
@@ -113,7 +116,7 @@ public class PantallaPrincipal extends JFrame {
 				c.show(panelPantallas, "PanelQuiz");
 			}
 		});
-		btnQuiz.setBounds(406, 11, 89, 23);
+		btnQuiz.setBounds(509, 25, 89, 23);
 		panelBotones.add(btnQuiz);
 		
 		//Boton Opciones
@@ -124,8 +127,20 @@ public class PantallaPrincipal extends JFrame {
 				c.show(panelPantallas, "PanelOpciones");
 			}
 		});
-		btnOpciones.setBounds(505, 11, 89, 23);
+		btnOpciones.setBounds(608, 25, 89, 23);
 		panelBotones.add(btnOpciones);
+		
+		//Logo GameQuiz
+		Image iLogo = new ImageIcon(this.getClass().getResource("/LogoDef.png")).getImage();
+		JLabel logo = new JLabel("");
+		logo.setBounds(10, 0, 80, 84);
+		logo.setIcon(new ImageIcon(iLogo));
+		panelBotones.add(logo);
+		
+		JPanel panel = new JPanel();
+		panel.setBounds(0, 84, 794, 23);
+		contentPane.add(panel);
+		panel.setLayout(null);
 		
 		
 	}

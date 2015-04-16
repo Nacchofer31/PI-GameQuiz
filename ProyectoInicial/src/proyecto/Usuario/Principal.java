@@ -12,7 +12,7 @@ public class Principal {
 
 
 	public static void main(String[] args) {
-		pantallaCarga();
+		//pantallaCarga();
 		//PantMenu frame = new PantMenu();
 		PantallaPrincipal frame = new PantallaPrincipal();
 		frame.setVisible(true);
