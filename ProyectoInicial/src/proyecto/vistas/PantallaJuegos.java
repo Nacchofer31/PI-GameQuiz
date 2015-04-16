@@ -5,7 +5,7 @@ import javax.swing.JTextField;
 
 public class PantallaJuegos extends JPanel {
 	private JTextField txtPanta;
-
+	
 	/**
 	 * Create the panel.
 	 */

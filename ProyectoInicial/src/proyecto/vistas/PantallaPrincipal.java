@@ -8,8 +8,8 @@ import java.awt.event.ActionListener;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JPanel;
 import javax.swing.JLabel;
+import javax.swing.JPanel;
 
 public class PantallaPrincipal extends JFrame {
 
@@ -20,7 +20,7 @@ public class PantallaPrincipal extends JFrame {
 	PantallaJuegos pJ= new PantallaJuegos();
 	PantallaQuiz pQ= new PantallaQuiz();
 	PantallaOpciones pO= new PantallaOpciones();
-	
+	JLabel imgFondo;	
 	
 	/**
 	 * Create the frame.
@@ -35,32 +35,37 @@ public class PantallaPrincipal extends JFrame {
 		
 		// JPanel para las pantallas
 		JPanel panelPantallas = new JPanel();
-		panelPantallas.setBounds(0, 106, 794, 466);
+		panelPantallas.setBounds(0, 105, 795, 465);
 		contentPane.add(panelPantallas);
 		this.setResizable(false);
 		panelPantallas.setLayout(new CardLayout(0, 0));
+
 				
 		panelPantallas.add(pI,"PanelInicio");
-		pI.setLayout(null);
+			pI.setLayout(null);
 				
 		panelPantallas.add(pH,"PanelHistoria");
-		pH.setLayout(null);
+			pH.setLayout(null);
 		
 		panelPantallas.add(pC,"PanelConsolas");
-		pC.setLayout(null);
+			pC.setLayout(null);
 		
 		panelPantallas.add(pJ,"PanelJuegos");
-		pJ.setLayout(null);
+			pJ.setLayout(null);
 		
 		panelPantallas.add(pQ,"PanelQuiz");
-		pQ.setLayout(null);
+			pQ.setLayout(null);
 		
 		panelPantallas.add(pO,"PanelOpciones");
-		pO.setLayout(null);
+			pO.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setBounds(0, 0, 795, 465);
+		contentPane.add(lblNewLabel);
 		
 		// JPanel para los botones
 		JPanel panelBotones = new JPanel();
-		panelBotones.setBounds(0, 0, 794, 84);
+		panelBotones.setBounds(0, 0, 795, 85);
 		contentPane.add(panelBotones);
 		panelBotones.setLayout(null);
 		
@@ -131,17 +136,24 @@ public class PantallaPrincipal extends JFrame {
 		panelBotones.add(btnOpciones);
 		
 		//Logo GameQuiz
-		Image iLogo = new ImageIcon(this.getClass().getResource("/LogoDef.png")).getImage();
+		Image imgLogo = new ImageIcon(this.getClass().getResource("/LogoDef.png")).getImage();
 		JLabel logo = new JLabel("");
 		logo.setBounds(10, 0, 80, 84);
-		logo.setIcon(new ImageIcon(iLogo));
+		logo.setIcon(new ImageIcon(imgLogo));
 		panelBotones.add(logo);
 		
+		//MARCO BAJO BOTONES SOBRE PANTALLA
 		JPanel panel = new JPanel();
 		panel.setBounds(0, 84, 794, 23);
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
-		
+		//IMAGEN DE FONDO
+		Image iFondo = new ImageIcon(this.getClass().getResource("/Fondo.png")).getImage();
+		imgFondo = new JLabel("/Fondo.png");
+		imgFondo.setBounds(0, 0, 800, 465);
+		imgFondo.setIcon(new ImageIcon(iFondo));
+		pI.add(imgFondo);
+	
 	}
 }

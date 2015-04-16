@@ -1,9 +1,11 @@
 package proyecto.vistas;
 
-import javax.swing.JPanel;
 import javax.swing.JLabel;
+import javax.swing.JPanel;
 
 public class PantallaInicio extends JPanel {
+
+    
 
 	/**
 	 * Create the panel.
@@ -26,6 +28,6 @@ public class PantallaInicio extends JPanel {
 		JLabel label_3 = new JLabel("Pantalla Inicio");
 		label_3.setBounds(704, 435, 107, 14);
 		add(label_3);
-
+		
 	}
 }

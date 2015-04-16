@@ -1,6 +1,6 @@
 package proyecto.Usuario;
 
-//Nacho
+//TAKUMA
 
 import java.awt.Color;
 
