@@ -1,7 +1,7 @@
 package proyecto.Usuario;
 
 //Nacho
-
+//Toni
 import java.awt.Color;
 
 import proyecto.vistas.PantallaPrincipal;
