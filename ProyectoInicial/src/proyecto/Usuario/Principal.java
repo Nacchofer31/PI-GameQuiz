@@ -1,13 +1,5 @@
 package proyecto.Usuario;
 
-<<<<<<< HEAD
-//TAKUMA
-
-=======
-//Nacho
-//Toni
-//segunda prueba de comentario
->>>>>>> branch 'master' of https://github.com/Nacchofer31/PI-GameQuiz.git
 import java.awt.Color;
 
 import proyecto.vistas.PantallaPrincipal;
