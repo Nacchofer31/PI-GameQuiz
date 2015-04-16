@@ -2,7 +2,7 @@ package proyecto.Usuario;
 
 //Nacho
 //Toni
-//prueba
+//segunda prueba de comentario
 import java.awt.Color;
 
 import proyecto.vistas.PantallaPrincipal;
