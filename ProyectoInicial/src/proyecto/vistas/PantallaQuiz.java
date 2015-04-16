@@ -1,22 +1,24 @@
 package proyecto.vistas;
 
+import java.awt.Image;
+
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 public class PantallaQuiz extends JPanel {
-	private JTextField txtPantallaQuiz;
 
-	/**
-	 * Create the panel.
-	 */
 	public PantallaQuiz() {
+		
 		setLayout(null);
 		
-		txtPantallaQuiz = new JTextField();
-		txtPantallaQuiz.setText("Pantalla Quiz");
-		txtPantallaQuiz.setBounds(10, 11, 86, 20);
-		add(txtPantallaQuiz);
-		txtPantallaQuiz.setColumns(10);
+		//IMAGEN DE FONDO
+		Image iFondo = new ImageIcon(this.getClass().getResource("/Fondo.png")).getImage();
+		JLabel imgFondo = new JLabel("/Fondo.png");	
+		imgFondo.setBounds(0, 0, 800, 600);
+		imgFondo.setIcon(new ImageIcon(iFondo));
+		this.add(imgFondo);
 
 	}
 

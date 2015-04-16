@@ -1,19 +1,22 @@
 package proyecto.vistas;
 
+import java.awt.Image;
+
+import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.JLabel;
 
 public class PantallaConsolas extends JPanel {
 
-	/**
-	 * Create the panel.
-	 */
 	public PantallaConsolas() {
 		setLayout(null);
 		
-		JLabel lblPantallaConsolas = new JLabel("Pantalla Consolas");
-		lblPantallaConsolas.setBounds(10, 30, 125, 14);
-		add(lblPantallaConsolas);
+		//IMAGEN DE FONDO
+		Image iFondo = new ImageIcon(this.getClass().getResource("/Fondo.png")).getImage();
+		JLabel imgFondo = new JLabel("/Fondo.png");
+		imgFondo.setBounds(0, 0, 800, 600);
+		imgFondo.setIcon(new ImageIcon(iFondo));
+		this.add(imgFondo);
 
 	}
 

@@ -19,12 +19,8 @@ public class PantallaPrincipal extends JFrame {
 	PantallaConsolas pC= new PantallaConsolas();
 	PantallaJuegos pJ= new PantallaJuegos();
 	PantallaQuiz pQ= new PantallaQuiz();
-	PantallaOpciones pO= new PantallaOpciones();
-	JLabel imgFondo;	
+	PantallaOpciones pO= new PantallaOpciones();	
 	
-	/**
-	 * Create the frame.
-	 */
 	public PantallaPrincipal() {
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -35,7 +31,7 @@ public class PantallaPrincipal extends JFrame {
 		
 		// JPanel para las pantallas
 		JPanel panelPantallas = new JPanel();
-		panelPantallas.setBounds(0, 105, 795, 465);
+		panelPantallas.setBounds(0, 105, 795, 467);
 		contentPane.add(panelPantallas);
 		this.setResizable(false);
 		panelPantallas.setLayout(new CardLayout(0, 0));
@@ -58,10 +54,6 @@ public class PantallaPrincipal extends JFrame {
 		
 		panelPantallas.add(pO,"PanelOpciones");
 			pO.setLayout(null);
-		
-		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setBounds(0, 0, 795, 465);
-		contentPane.add(lblNewLabel);
 		
 		// JPanel para los botones
 		JPanel panelBotones = new JPanel();
@@ -148,12 +140,8 @@ public class PantallaPrincipal extends JFrame {
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
-		//IMAGEN DE FONDO
-		Image iFondo = new ImageIcon(this.getClass().getResource("/Fondo.png")).getImage();
-		imgFondo = new JLabel("/Fondo.png");
-		imgFondo.setBounds(0, 0, 800, 600);
-		imgFondo.setIcon(new ImageIcon(iFondo));
-		panelPantallas.add(imgFondo);
+		
 		
 	}
+
 }

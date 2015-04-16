@@ -1,21 +1,22 @@
 package proyecto.vistas;
 
+import java.awt.Image;
+
+import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class PantallaHistoria extends JPanel {
-	JLabel lblPantallaHistoria;
-	JLabel imgFondo;
-
-	/**
-	 * Create the panel.
-	 */
+	
 	public PantallaHistoria() {
 		setLayout(null);
-	
-		lblPantallaHistoria = new JLabel("");
-		lblPantallaHistoria.setBounds(10, 29, 154, 14);
-		add(lblPantallaHistoria);
+		
+		//IMAGEN DE FONDO
+		Image iFondo = new ImageIcon(this.getClass().getResource("/Fondo.png")).getImage();
+		JLabel imgFondo = new JLabel("/Fondo.png");
+		imgFondo.setBounds(0, 0, 800, 600);
+		imgFondo.setIcon(new ImageIcon(iFondo));
+		this.add(imgFondo);
 
 		
 	}

@@ -1,22 +1,23 @@
 package proyecto.vistas;
 
+import java.awt.Image;
+
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 public class PantallaJuegos extends JPanel {
-	private JTextField txtPanta;
 	
-	/**
-	 * Create the panel.
-	 */
 	public PantallaJuegos() {
 		setLayout(null);
 		
-		txtPanta = new JTextField();
-		txtPanta.setText("Pantalla Juegos");
-		txtPanta.setBounds(10, 11, 86, 20);
-		add(txtPanta);
-		txtPanta.setColumns(10);
+		//IMAGEN DE FONDO
+		Image iFondo = new ImageIcon(this.getClass().getResource("/Fondo.png")).getImage();
+		JLabel imgFondo = new JLabel("/Fondo.png");
+		imgFondo.setBounds(0, 0, 800, 600);
+		imgFondo.setIcon(new ImageIcon(iFondo));
+		this.add(imgFondo);
 
 	}
 }
