@@ -27,7 +27,7 @@ public class PantallaPrincipal extends JFrame {
 	public PantallaPrincipal() {
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(300, 100, 800, 600);
+		setBounds(100, 000, 1200, 724);
 		contentPane = new JPanel();
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
