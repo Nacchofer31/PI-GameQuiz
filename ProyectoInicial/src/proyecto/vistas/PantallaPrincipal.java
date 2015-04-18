@@ -27,14 +27,14 @@ public class PantallaPrincipal extends JFrame {
 	public PantallaPrincipal() {
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 000, 1200, 724);
+		setBounds(100, 000, 1200, 725);
 		contentPane = new JPanel();
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		// JPanel para las pantallas
 		JPanel panelPantallas = new JPanel();
-		panelPantallas.setBounds(0, 105, 795, 467);
+		panelPantallas.setBounds(0, 105, 1195, 615);
 		contentPane.add(panelPantallas);
 		this.setResizable(false);
 		panelPantallas.setLayout(new CardLayout(0, 0));
@@ -60,13 +60,14 @@ public class PantallaPrincipal extends JFrame {
 		
 		// JPanel para los botones
 		JPanel panelBotones = new JPanel();
-		panelBotones.setBounds(0, 0, 795, 85);
+		panelBotones.setBounds(0, 0, 1195, 85);
 		contentPane.add(panelBotones);
 		panelBotones.setLayout(null);
 		
 		// Boton Inicio
 		JButton btnInicio = new JButton("Inicio");
-		btnInicio.setIcon(new ImageIcon("C:\\Users\\Nach\\git\\PI-GameQuiz\\ProyectoInicial\\imgs\\home.png"));
+		Image imgInicio = new ImageIcon(this.getClass().getResource("/home.png")).getImage();
+		btnInicio.setIcon(new ImageIcon(imgInicio));
 		btnInicio.setFont(new Font("Courgette", Font.PLAIN, 19));
 		btnInicio.setForeground(new Color(255, 0, 0));
 		btnInicio.setOpaque(false);
@@ -85,7 +86,8 @@ public class PantallaPrincipal extends JFrame {
 		
 		//Boton Historia
 		JButton btnHistoria = new JButton("Historia");
-		btnHistoria.setIcon(new ImageIcon("C:\\Users\\Nach\\git\\PI-GameQuiz\\ProyectoInicial\\imgs\\book.png"));
+		Image imgHistoria = new ImageIcon(this.getClass().getResource("/book.png")).getImage();
+		btnHistoria.setIcon(new ImageIcon(imgHistoria));
 		btnHistoria.setFont(new Font("Courgette", Font.PLAIN, 19));
 		btnHistoria.setForeground(new Color(255, 0, 0));
 		btnHistoria.setOpaque(false);
@@ -102,7 +104,8 @@ public class PantallaPrincipal extends JFrame {
 		
 		//Boton Consolas
 		JButton btnConsolas = new JButton("Consolas");
-		btnConsolas.setIcon(new ImageIcon("C:\\Users\\Nach\\git\\PI-GameQuiz\\ProyectoInicial\\imgs\\consoles.png"));
+		Image imgConsolas = new ImageIcon(this.getClass().getResource("/consoles.png")).getImage();
+		btnConsolas.setIcon(new ImageIcon(imgConsolas));
 		btnConsolas.setFont(new Font("Courgette", Font.PLAIN, 19));
 		btnConsolas.setForeground(new Color(255, 0, 0));
 		btnConsolas.setOpaque(false);
@@ -119,7 +122,8 @@ public class PantallaPrincipal extends JFrame {
 		
 		//Boton Juegos
 		JButton btnJuegos = new JButton("Juegos");
-		btnJuegos.setIcon(new ImageIcon("C:\\Users\\Nach\\git\\PI-GameQuiz\\ProyectoInicial\\imgs\\games.png"));
+		Image imgJuegos = new ImageIcon(this.getClass().getResource("/games.png")).getImage();
+		btnJuegos.setIcon(new ImageIcon(imgJuegos));
 		btnJuegos.setFont(new Font("Courgette", Font.PLAIN, 19));
 		btnJuegos.setForeground(new Color(255, 0, 0));
 		btnJuegos.setOpaque(false);
@@ -136,7 +140,8 @@ public class PantallaPrincipal extends JFrame {
 		
 		//Boton Quiz
 		JButton btnQuiz = new JButton("Quiz");
-		btnQuiz.setIcon(new ImageIcon("C:\\Users\\Nach\\git\\PI-GameQuiz\\ProyectoInicial\\imgs\\thumbs.png"));
+		Image imgQuiz = new ImageIcon(this.getClass().getResource("/thumbs.png")).getImage();
+		btnQuiz.setIcon(new ImageIcon(imgQuiz));
 		btnQuiz.setFont(new Font("Courgette", Font.PLAIN, 19));
 		btnQuiz.setForeground(new Color(255, 0, 0));
 		btnQuiz.setOpaque(false);
@@ -153,7 +158,8 @@ public class PantallaPrincipal extends JFrame {
 		
 		//Boton Opciones
 		JButton btnOpciones = new JButton("");
-		btnOpciones.setIcon(new ImageIcon("C:\\Users\\Nach\\git\\PI-GameQuiz\\ProyectoInicial\\imgs\\settings.png"));
+		Image imgSettings = new ImageIcon(this.getClass().getResource("/settings.png")).getImage();
+		btnOpciones.setIcon(new ImageIcon(imgSettings));
 		btnOpciones.setFont(new Font("Courgette", Font.PLAIN, 19));
 		btnOpciones.setForeground(new Color(255, 0, 0));
 		btnOpciones.setOpaque(false);
@@ -165,7 +171,7 @@ public class PantallaPrincipal extends JFrame {
 				c.show(panelPantallas, "PanelOpciones");
 			}
 		});
-		btnOpciones.setBounds(696, 28, 89, 53);
+		btnOpciones.setBounds(696, 22, 80, 53);
 		panelBotones.add(btnOpciones);
 		
 		//Logo GameQuiz
@@ -181,7 +187,7 @@ public class PantallaPrincipal extends JFrame {
 		
 		//MARCO BAJO BOTONES SOBRE PANTALLA
 		JPanel panel = new JPanel();
-		panel.setBounds(0, 84, 794, 23);
+		panel.setBounds(0, 84, 1194, 23);
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
