@@ -27,14 +27,14 @@ public class PantallaPrincipal extends JFrame {
 	public PantallaPrincipal() {
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 000, 1200, 725);
+		setBounds(000, 000, 1361, 725);
 		contentPane = new JPanel();
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		// JPanel para las pantallas
 		JPanel panelPantallas = new JPanel();
-		panelPantallas.setBounds(0, 105, 1195, 615);
+		panelPantallas.setBounds(0, 105, 1355, 591);
 		contentPane.add(panelPantallas);
 		this.setResizable(false);
 		panelPantallas.setLayout(new CardLayout(0, 0));
@@ -60,7 +60,7 @@ public class PantallaPrincipal extends JFrame {
 		
 		// JPanel para los botones
 		JPanel panelBotones = new JPanel();
-		panelBotones.setBounds(0, 0, 1195, 85);
+		panelBotones.setBounds(0, 0, 1355, 85);
 		contentPane.add(panelBotones);
 		panelBotones.setLayout(null);
 		
@@ -81,7 +81,7 @@ public class PantallaPrincipal extends JFrame {
 		});
 		
 		Image imgHeader = new ImageIcon(this.getClass().getResource("/MuroPiedras.png")).getImage();
-		btnInicio.setBounds(94, 34, 128, 28);
+		btnInicio.setBounds(148, 34, 128, 28);
 		panelBotones.add(btnInicio);
 		
 		//Boton Historia
@@ -99,7 +99,7 @@ public class PantallaPrincipal extends JFrame {
 				c.show(panelPantallas, "PanelHistoria");
 			}
 		});
-		btnHistoria.setBounds(204, 30, 153, 36);
+		btnHistoria.setBounds(326, 30, 153, 36);
 		panelBotones.add(btnHistoria);
 		
 		//Boton Consolas
@@ -117,7 +117,7 @@ public class PantallaPrincipal extends JFrame {
 				c.show(panelPantallas, "PanelConsolas");
 			}
 		});
-		btnConsolas.setBounds(336, 30, 153, 36);
+		btnConsolas.setBounds(512, 30, 153, 36);
 		panelBotones.add(btnConsolas);
 		
 		//Boton Juegos
@@ -135,7 +135,7 @@ public class PantallaPrincipal extends JFrame {
 				c.show(panelPantallas, "PanelJuegos");
 			}
 		});
-		btnJuegos.setBounds(452, 34, 146, 28);
+		btnJuegos.setBounds(696, 34, 146, 28);
 		panelBotones.add(btnJuegos);
 		
 		//Boton Quiz
@@ -153,7 +153,7 @@ public class PantallaPrincipal extends JFrame {
 				c.show(panelPantallas, "PanelQuiz");
 			}
 		});
-		btnQuiz.setBounds(561, 28, 146, 41);
+		btnQuiz.setBounds(876, 28, 146, 41);
 		panelBotones.add(btnQuiz);
 		
 		//Boton Opciones
@@ -171,7 +171,7 @@ public class PantallaPrincipal extends JFrame {
 				c.show(panelPantallas, "PanelOpciones");
 			}
 		});
-		btnOpciones.setBounds(696, 22, 80, 53);
+		btnOpciones.setBounds(1107, 28, 80, 53);
 		panelBotones.add(btnOpciones);
 		
 		//Logo GameQuiz
@@ -181,15 +181,21 @@ public class PantallaPrincipal extends JFrame {
 		logo.setIcon(new ImageIcon(imgLogo));
 		panelBotones.add(logo);
 		JLabel header = new JLabel("");
-		header.setBounds(0, 0, 795, 85);
+		header.setBounds(0, 0, 1355, 85);
 		panelBotones.add(header);
 		header.setIcon(new ImageIcon(imgHeader));
 		
 		//MARCO BAJO BOTONES SOBRE PANTALLA
 		JPanel panel = new JPanel();
-		panel.setBounds(0, 84, 1194, 23);
+		panel.setBounds(0, 84, 1355, 23);
 		contentPane.add(panel);
 		panel.setLayout(null);
+		
+		Image imgBar = new ImageIcon(this.getClass().getResource("/bar.png")).getImage();
+		JLabel label = new JLabel("");
+		label.setBounds(0, 0, 1355, 23);
+		label.setIcon(new ImageIcon(imgBar));
+		panel.add(label);
 		
 		
 		
