@@ -1,16 +1,14 @@
-package proyecto.vistas;
+package vista;
 
 import java.awt.Image;
 
 import javax.swing.ImageIcon;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JTextField;
+import javax.swing.JLabel;
 
-public class PantallaOpciones extends JPanel {
+public class PantallaConsolas extends JPanel {
 
-	public PantallaOpciones() {
-		
+	public PantallaConsolas() {
 		setLayout(null);
 		
 		//IMAGEN DE FONDO

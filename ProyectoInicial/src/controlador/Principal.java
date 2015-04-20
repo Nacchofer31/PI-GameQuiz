@@ -1,8 +1,8 @@
-package proyecto.Usuario;
+package controlador;
 
 import java.awt.Color;
 
-import proyecto.vistas.PantallaPrincipal;
+import vista.PantallaPrincipal;
 
 import com.thehowtotutorial.splashscreen.JSplash;
 

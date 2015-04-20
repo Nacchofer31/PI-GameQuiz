@@ -1,4 +1,4 @@
-package proyecto.vistas;
+package vista;
 
 import java.awt.CardLayout;
 import java.awt.Color;

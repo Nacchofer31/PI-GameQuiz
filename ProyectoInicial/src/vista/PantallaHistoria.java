@@ -1,4 +1,4 @@
-package proyecto.vistas;
+package vista;
 
 import java.awt.Image;
 
@@ -13,7 +13,7 @@ public class PantallaHistoria extends JPanel {
 		
 		Image iLetrasHistoria = new ImageIcon(this.getClass().getResource("/LetrasHistoria.png")).getImage();
 		JLabel labelLetrasHistoria = new JLabel("/LetrasHistoria.png");
-		labelLetrasHistoria.setBounds(20, 28, 357, 175);
+		labelLetrasHistoria.setBounds(452, 36, 357, 175);
 		labelLetrasHistoria.setIcon(new ImageIcon(iLetrasHistoria));
 		add(labelLetrasHistoria);
 		
