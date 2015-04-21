@@ -23,7 +23,7 @@ public class PantallaHistoria extends JPanel {
 		//Letras
 		Image iLetrasHistoria = new ImageIcon(this.getClass().getResource("/LetrasHistoria.png")).getImage();
 		JLabel labelLetrasHistoria = new JLabel("/LetrasHistoria.png");
-		labelLetrasHistoria.setBounds(452, 36, 357, 175);
+		labelLetrasHistoria.setBounds(63, 110, 357, 175);
 		labelLetrasHistoria.setIcon(new ImageIcon(iLetrasHistoria));
 		add(labelLetrasHistoria);
 		
@@ -31,34 +31,34 @@ public class PantallaHistoria extends JPanel {
 		
 		//Boton Decada 70
 		JButton button70 = new JButton("70's");
-		button70.setBounds(45, 240, 58, 23);
+		button70.setBounds(63, 432, 58, 23);
 		add(button70);
 		
 		//Boton Decada 80
 		JButton button80 = new JButton("80's");
-		button80.setBounds(113, 240, 58, 23);
+		button80.setBounds(131, 432, 58, 23);
 		add(button80);
 		
 		//Boton Decada 90
 		JButton button90 = new JButton("90's");
-		button90.setBounds(181, 240, 58, 23);
+		button90.setBounds(199, 432, 58, 23);
 		add(button90);
 		
 		//Boton Decada 00's
 		JButton button00 = new JButton("00's");
-		button00.setBounds(249, 240, 58, 23);
+		button00.setBounds(267, 432, 58, 23);
 		add(button00);
 		
 		//Boton Decada 10's
 		JButton button10 = new JButton("10's");
-		button10.setBounds(317, 240, 58, 23);
+		button10.setBounds(335, 432, 58, 23);
 		add(button10);
 		
 		//Label elige
 		JLabel lblElige = new JLabel("Elige la década que quieras leer");
 		lblElige.setForeground(Color.WHITE);
 		lblElige.setFont(new Font("BatangChe", Font.BOLD, 20));
-		lblElige.setBounds(45, 174, 365, 33);
+		lblElige.setBounds(63, 366, 365, 33);
 		add(lblElige);
 		
 		//IMAGEN DE FONDO
