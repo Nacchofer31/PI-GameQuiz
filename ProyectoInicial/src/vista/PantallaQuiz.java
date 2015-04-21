@@ -12,6 +12,7 @@ public class PantallaQuiz extends JPanel {
 	public PantallaQuiz() {
 		
 		setLayout(null);
+		setBounds(0, 105, 1355, 591);
 		
 		//IMAGEN DE FONDO
 		Image iFondo = new ImageIcon(this.getClass().getResource("/Fondo.png")).getImage();

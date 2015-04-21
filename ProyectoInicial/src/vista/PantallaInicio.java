@@ -11,6 +11,7 @@ public class PantallaInicio extends JPanel {
 
 	public PantallaInicio() {
 		setLayout(null);
+		setBounds(0, 105, 1355, 591);
 				
 		
 		JLabel label = new JLabel("Pantalla Inicio");

@@ -1,25 +1,33 @@
 package vista;
 
+import java.awt.CardLayout;
+import java.awt.Color;
+import java.awt.Font;
 import java.awt.Image;
 
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import java.awt.Button;
-import javax.swing.JButton;
-import java.awt.Font;
-import java.awt.Color;
+
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class PantallaHistoria extends JPanel {
 	
 	public PantallaHistoria() {
+
 		setLayout(null);
+		setBounds(0, 105, 1355, 591);
 		
+		//Letras
 		Image iLetrasHistoria = new ImageIcon(this.getClass().getResource("/LetrasHistoria.png")).getImage();
 		JLabel labelLetrasHistoria = new JLabel("/LetrasHistoria.png");
 		labelLetrasHistoria.setBounds(452, 36, 357, 175);
 		labelLetrasHistoria.setIcon(new ImageIcon(iLetrasHistoria));
 		add(labelLetrasHistoria);
+		
+		
 		
 		//Boton Decada 70
 		JButton button70 = new JButton("70's");
@@ -58,22 +66,8 @@ public class PantallaHistoria extends JPanel {
 		JLabel imgFondo = new JLabel("/Fondo.png");
 		imgFondo.setBounds(0, 0, 1600, 591);
 		imgFondo.setIcon(new ImageIcon(iFondo));
-		this.add(imgFondo);
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
+		add(imgFondo);
 		
 	}
+
 }

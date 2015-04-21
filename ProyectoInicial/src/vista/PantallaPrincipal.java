@@ -16,7 +16,8 @@ import java.awt.SystemColor;
 
 public class PantallaPrincipal extends JFrame {
 
-	private JPanel contentPane;
+	public JPanel contentPane;
+	public JPanel panelPantallas = new JPanel();
 	PantallaInicio pI= new PantallaInicio();
 	PantallaHistoria pH= new PantallaHistoria();
 	PantallaConsolas pC= new PantallaConsolas();
@@ -33,7 +34,6 @@ public class PantallaPrincipal extends JFrame {
 		contentPane.setLayout(null);
 		
 		// JPanel para las pantallas
-		JPanel panelPantallas = new JPanel();
 		panelPantallas.setBounds(0, 105, 1355, 591);
 		contentPane.add(panelPantallas);
 		this.setResizable(false);
