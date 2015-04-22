@@ -28,7 +28,7 @@ public class PantallaPrincipal extends JFrame {
 	public PantallaPrincipal() {
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(000, 000, 1361, 725);
+		setBounds(000, 000, 1355, 725);
 		contentPane = new JPanel();
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
@@ -81,7 +81,7 @@ public class PantallaPrincipal extends JFrame {
 		});
 		
 		Image imgHeader = new ImageIcon(this.getClass().getResource("/MuroPiedras.png")).getImage();
-		btnInicio.setBounds(148, 34, 128, 28);
+		btnInicio.setBounds(150, 10, 150, 75);
 		panelBotones.add(btnInicio);
 		
 		//Boton Historia
@@ -99,7 +99,7 @@ public class PantallaPrincipal extends JFrame {
 				c.show(panelPantallas, "PanelHistoria");
 			}
 		});
-		btnHistoria.setBounds(326, 30, 153, 36);
+		btnHistoria.setBounds(325, 10, 165, 75);
 		panelBotones.add(btnHistoria);
 		
 		//Boton Consolas
@@ -117,7 +117,7 @@ public class PantallaPrincipal extends JFrame {
 				c.show(panelPantallas, "PanelConsolas");
 			}
 		});
-		btnConsolas.setBounds(512, 30, 153, 36);
+		btnConsolas.setBounds(500, 10, 150, 75);
 		panelBotones.add(btnConsolas);
 		
 		//Boton Juegos
@@ -135,7 +135,7 @@ public class PantallaPrincipal extends JFrame {
 				c.show(panelPantallas, "PanelJuegos");
 			}
 		});
-		btnJuegos.setBounds(696, 34, 146, 28);
+		btnJuegos.setBounds(675, 10, 150, 75);
 		panelBotones.add(btnJuegos);
 		
 		//Boton Quiz
@@ -153,7 +153,7 @@ public class PantallaPrincipal extends JFrame {
 				c.show(panelPantallas, "PanelQuiz");
 			}
 		});
-		btnQuiz.setBounds(876, 28, 146, 41);
+		btnQuiz.setBounds(850, 10, 150, 75);
 		panelBotones.add(btnQuiz);
 		
 		//Boton Opciones
@@ -171,13 +171,13 @@ public class PantallaPrincipal extends JFrame {
 				c.show(panelPantallas, "PanelOpciones");
 			}
 		});
-		btnOpciones.setBounds(1107, 28, 80, 53);
+		btnOpciones.setBounds(1025, 10, 150, 75);
 		panelBotones.add(btnOpciones);
 		
 		//Logo GameQuiz
 		Image imgLogo = new ImageIcon(this.getClass().getResource("/LogoDef.png")).getImage();
 		JLabel logo = new JLabel("");
-		logo.setBounds(23, 1, 80, 84);
+		logo.setBounds(25, 1, 80, 84);
 		logo.setIcon(new ImageIcon(imgLogo));
 		panelBotones.add(logo);
 		JLabel header = new JLabel("");

@@ -14,20 +14,9 @@ public class PantallaInicio extends JPanel {
 		setBounds(0, 105, 1355, 591);
 				
 		
-		JLabel label = new JLabel("Pantalla Inicio");
-		label.setBounds(10, 435, 131, 14);
-		add(label);
-		
-		JLabel label_1 = new JLabel("Pantalla Inicio");
-		label_1.setBounds(10, 11, 131, 14);
-		add(label_1);
-		
-		JLabel label_3 = new JLabel("Pantalla Inicio");
-		label_3.setBounds(704, 435, 107, 14);
-		add(label_3);
-		JLabel imgFondo = new JLabel("/Fondo.png");
-		
 		//IMAGEN DE FONDO
+		JLabel imgFondo = new JLabel("/Fondo.png");
+
 		Image iFondo = new ImageIcon(this.getClass().getResource("/Fondo.png")).getImage();
 		
 		JLabel label_2 = new JLabel("Pantalla Inicio");

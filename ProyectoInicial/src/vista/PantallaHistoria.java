@@ -64,7 +64,7 @@ public class PantallaHistoria extends JPanel {
 		//IMAGEN DE FONDO
 		Image iFondo = new ImageIcon(this.getClass().getResource("/Fondo.png")).getImage();
 		JLabel imgFondo = new JLabel("/Fondo.png");
-		imgFondo.setBounds(0, 0, 1600, 591);
+		imgFondo.setBounds(27, 0, 1600, 591);
 		imgFondo.setIcon(new ImageIcon(iFondo));
 		add(imgFondo);
 		

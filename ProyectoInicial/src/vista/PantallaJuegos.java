@@ -11,12 +11,12 @@ public class PantallaJuegos extends JPanel {
 	
 	public PantallaJuegos() {
 		setLayout(null);
-		setBounds(0, 105, 1355, 591);
+		setBounds(0, 0, 1355, 591);
 		
 		//IMAGEN DE FONDO
 		Image iFondo = new ImageIcon(this.getClass().getResource("/Fondo.png")).getImage();
 		JLabel imgFondo = new JLabel("/Fondo.png");
-		imgFondo.setBounds(0, 0, 1600, 591);
+		imgFondo.setBounds(27, 0, 1600, 591);
 		imgFondo.setIcon(new ImageIcon(iFondo));
 		this.add(imgFondo);
 
