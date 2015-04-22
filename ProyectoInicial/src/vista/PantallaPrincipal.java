@@ -16,10 +16,11 @@ import java.awt.SystemColor;
 
 public class PantallaPrincipal extends JFrame {
 
-	public JPanel contentPane;
-	public JPanel panelPantallas = new JPanel();
+	private JPanel contentPane;
+	private static JPanel panelPantallas = new JPanel();
 	PantallaInicio pI= new PantallaInicio();
 	PantallaHistoria pH= new PantallaHistoria();
+	Decada70 d70 = new Decada70();
 	PantallaConsolas pC= new PantallaConsolas();
 	PantallaJuegos pJ= new PantallaJuegos();
 	PantallaQuiz pQ= new PantallaQuiz();
@@ -46,6 +47,9 @@ public class PantallaPrincipal extends JFrame {
 		panelPantallas.add(pH,"PanelHistoria");
 			pH.setLayout(null);
 		
+		panelPantallas.add(d70,"Decada70");
+			d70.setLayout(null);
+			
 		panelPantallas.add(pC,"PanelConsolas");
 			pC.setLayout(null);
 		
@@ -196,8 +200,11 @@ public class PantallaPrincipal extends JFrame {
 		label.setBounds(0, 0, 1355, 23);
 		label.setIcon(new ImageIcon(imgBar));
 		panel.add(label);
-		
-		
-		
+	
+	}
+	
+	public static void ponerDecada70(){
+		CardLayout c= (CardLayout)panelPantallas.getLayout();
+		c.show(panelPantallas, "Decada70");
 	}
 }

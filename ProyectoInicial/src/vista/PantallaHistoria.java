@@ -1,6 +1,5 @@
 package vista;
 
-import java.awt.CardLayout;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
@@ -9,11 +8,11 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
 public class PantallaHistoria extends JPanel {
+	
 	
 	public PantallaHistoria() {
 
@@ -31,6 +30,11 @@ public class PantallaHistoria extends JPanel {
 		
 		//Boton Decada 70
 		JButton button70 = new JButton("70's");
+		button70.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				PantallaPrincipal.ponerDecada70();
+			}
+		});
 		button70.setBounds(63, 432, 58, 23);
 		add(button70);
 		
@@ -66,7 +70,7 @@ public class PantallaHistoria extends JPanel {
 		JLabel imgFondo = new JLabel("/Fondo.png");
 		imgFondo.setBounds(27, 0, 1600, 591);
 		imgFondo.setIcon(new ImageIcon(iFondo));
-		add(imgFondo);
+		this.add(imgFondo);
 		
 	}
 
