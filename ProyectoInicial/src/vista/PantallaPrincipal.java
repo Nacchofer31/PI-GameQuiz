@@ -21,6 +21,10 @@ public class PantallaPrincipal extends JFrame {
 	PantallaInicio pI= new PantallaInicio();
 	PantallaHistoria pH= new PantallaHistoria();
 	Decada70 d70 = new Decada70();
+	Decada80 d80 = new Decada80();
+	Decada90 d90 = new Decada90();
+	Decada00 d00 = new Decada00();
+	Decada10 d10 = new Decada10();
 	PantallaConsolas pC= new PantallaConsolas();
 	PantallaJuegos pJ= new PantallaJuegos();
 	PantallaQuiz pQ= new PantallaQuiz();
@@ -42,13 +46,25 @@ public class PantallaPrincipal extends JFrame {
 
 				
 		panelPantallas.add(pI,"PanelInicio");
-			pI.setLayout(null);
+		pI.setLayout(null);
 				
 		panelPantallas.add(pH,"PanelHistoria");
-			pH.setLayout(null);
+		pH.setLayout(null);
 		
 		panelPantallas.add(d70,"Decada70");
-			d70.setLayout(null);
+		d70.setLayout(null);
+			
+		panelPantallas.add(d80,"Decada80");
+		d80.setLayout(null);
+		
+		panelPantallas.add(d90,"Decada90");
+		d90.setLayout(null);
+		
+		panelPantallas.add(d00,"Decada00");
+		d00.setLayout(null);
+			
+		panelPantallas.add(d10,"Decada10");
+		d10.setLayout(null);
 			
 		panelPantallas.add(pC,"PanelConsolas");
 			pC.setLayout(null);
@@ -206,5 +222,25 @@ public class PantallaPrincipal extends JFrame {
 	public static void ponerDecada70(){
 		CardLayout c= (CardLayout)panelPantallas.getLayout();
 		c.show(panelPantallas, "Decada70");
+	}
+	
+	public static void ponerDecada80(){
+		CardLayout c= (CardLayout)panelPantallas.getLayout();
+		c.show(panelPantallas, "Decada80");
+	}
+	
+	public static void ponerDecada90(){
+		CardLayout c= (CardLayout)panelPantallas.getLayout();
+		c.show(panelPantallas, "Decada90");
+	}
+	
+	public static void ponerDecada00(){
+		CardLayout c= (CardLayout)panelPantallas.getLayout();
+		c.show(panelPantallas, "Decada00");
+	}
+	
+	public static void ponerDecada10(){
+		CardLayout c= (CardLayout)panelPantallas.getLayout();
+		c.show(panelPantallas, "Decada10");
 	}
 }

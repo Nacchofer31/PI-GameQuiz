@@ -8,16 +8,16 @@ import javax.swing.JPanel;
 import java.awt.Color;
 import javax.swing.JButton;
 
-public class Decada70 extends JPanel {
+public class Decada80 extends JPanel {
 	
-	public Decada70() {
+	public Decada80() {
 		
 		setLayout(null);
 		setBounds(0, 105, 1355, 591);
 		
 		JLabel lblDecada = new JLabel("DECADA");
 		lblDecada.setForeground(Color.RED);
-		lblDecada.setBounds(10, 68, 84, 41);
+		lblDecada.setBounds(98, 63, 84, 41);
 		add(lblDecada);
 		
 		

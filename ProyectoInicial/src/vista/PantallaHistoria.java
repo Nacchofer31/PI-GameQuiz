@@ -40,21 +40,41 @@ public class PantallaHistoria extends JPanel {
 		
 		//Boton Decada 80
 		JButton button80 = new JButton("80's");
+		button80.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				PantallaPrincipal.ponerDecada80();
+			}
+		});
 		button80.setBounds(131, 432, 58, 23);
 		add(button80);
 		
 		//Boton Decada 90
 		JButton button90 = new JButton("90's");
+		button90.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				PantallaPrincipal.ponerDecada90();
+			}
+		});
 		button90.setBounds(199, 432, 58, 23);
 		add(button90);
 		
 		//Boton Decada 00's
 		JButton button00 = new JButton("00's");
+		button00.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				PantallaPrincipal.ponerDecada00();
+			}
+		});
 		button00.setBounds(267, 432, 58, 23);
 		add(button00);
 		
 		//Boton Decada 10's
 		JButton button10 = new JButton("10's");
+		button10.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				PantallaPrincipal.ponerDecada10();
+			}
+		});
 		button10.setBounds(335, 432, 58, 23);
 		add(button10);
 		

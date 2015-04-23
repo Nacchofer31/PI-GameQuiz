@@ -8,9 +8,9 @@ import javax.swing.JPanel;
 import java.awt.Color;
 import javax.swing.JButton;
 
-public class Decada70 extends JPanel {
+public class Decada00 extends JPanel {
 	
-	public Decada70() {
+	public Decada00() {
 		
 		setLayout(null);
 		setBounds(0, 105, 1355, 591);
