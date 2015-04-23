@@ -89,7 +89,7 @@ public class PantallaPrincipal extends JFrame {
 		Image imgInicio = new ImageIcon(this.getClass().getResource("/home.png")).getImage();
 		btnInicio.setIcon(new ImageIcon(imgInicio));
 		btnInicio.setFont(new Font("Courgette", Font.PLAIN, 19));
-		btnInicio.setForeground(new Color(255, 0, 0));
+		btnInicio.setForeground(Color.WHITE);
 		btnInicio.setOpaque(false);
 		btnInicio.setContentAreaFilled(false);
 		btnInicio.setBorderPainted(false);
@@ -109,7 +109,7 @@ public class PantallaPrincipal extends JFrame {
 		Image imgHistoria = new ImageIcon(this.getClass().getResource("/book.png")).getImage();
 		btnHistoria.setIcon(new ImageIcon(imgHistoria));
 		btnHistoria.setFont(new Font("Courgette", Font.PLAIN, 19));
-		btnHistoria.setForeground(new Color(255, 0, 0));
+		btnHistoria.setForeground(Color.WHITE);
 		btnHistoria.setOpaque(false);
 		btnHistoria.setContentAreaFilled(false);
 		btnHistoria.setBorderPainted(false);
@@ -119,7 +119,7 @@ public class PantallaPrincipal extends JFrame {
 				c.show(panelPantallas, "PanelHistoria");
 			}
 		});
-		btnHistoria.setBounds(325, 10, 165, 75);
+		btnHistoria.setBounds(325, 10, 177, 75);
 		panelBotones.add(btnHistoria);
 		
 		//Boton Consolas
@@ -127,7 +127,7 @@ public class PantallaPrincipal extends JFrame {
 		Image imgConsolas = new ImageIcon(this.getClass().getResource("/consoles.png")).getImage();
 		btnConsolas.setIcon(new ImageIcon(imgConsolas));
 		btnConsolas.setFont(new Font("Courgette", Font.PLAIN, 19));
-		btnConsolas.setForeground(new Color(255, 0, 0));
+		btnConsolas.setForeground(Color.WHITE);
 		btnConsolas.setOpaque(false);
 		btnConsolas.setContentAreaFilled(false);
 		btnConsolas.setBorderPainted(false);
@@ -137,15 +137,16 @@ public class PantallaPrincipal extends JFrame {
 				c.show(panelPantallas, "PanelConsolas");
 			}
 		});
-		btnConsolas.setBounds(500, 10, 150, 75);
+		btnConsolas.setBounds(500, 10, 190, 75);
 		panelBotones.add(btnConsolas);
+		
 		
 		//Boton Juegos
 		JButton btnJuegos = new JButton("Juegos");
 		Image imgJuegos = new ImageIcon(this.getClass().getResource("/games.png")).getImage();
 		btnJuegos.setIcon(new ImageIcon(imgJuegos));
 		btnJuegos.setFont(new Font("Courgette", Font.PLAIN, 19));
-		btnJuegos.setForeground(new Color(255, 0, 0));
+		btnJuegos.setForeground(Color.WHITE);
 		btnJuegos.setOpaque(false);
 		btnJuegos.setContentAreaFilled(false);
 		btnJuegos.setBorderPainted(false);
@@ -155,7 +156,7 @@ public class PantallaPrincipal extends JFrame {
 				c.show(panelPantallas, "PanelJuegos");
 			}
 		});
-		btnJuegos.setBounds(675, 10, 150, 75);
+		btnJuegos.setBounds(675, 10, 190, 75);
 		panelBotones.add(btnJuegos);
 		
 		//Boton Quiz
@@ -163,7 +164,7 @@ public class PantallaPrincipal extends JFrame {
 		Image imgQuiz = new ImageIcon(this.getClass().getResource("/thumbs.png")).getImage();
 		btnQuiz.setIcon(new ImageIcon(imgQuiz));
 		btnQuiz.setFont(new Font("Courgette", Font.PLAIN, 19));
-		btnQuiz.setForeground(new Color(255, 0, 0));
+		btnQuiz.setForeground(new Color(255, 255, 255));
 		btnQuiz.setOpaque(false);
 		btnQuiz.setContentAreaFilled(false);
 		btnQuiz.setBorderPainted(false);
@@ -181,7 +182,7 @@ public class PantallaPrincipal extends JFrame {
 		Image imgSettings = new ImageIcon(this.getClass().getResource("/settings.png")).getImage();
 		btnOpciones.setIcon(new ImageIcon(imgSettings));
 		btnOpciones.setFont(new Font("Courgette", Font.PLAIN, 19));
-		btnOpciones.setForeground(new Color(255, 0, 0));
+		btnOpciones.setForeground(Color.WHITE);
 		btnOpciones.setOpaque(false);
 		btnOpciones.setContentAreaFilled(false);
 		btnOpciones.setBorderPainted(false);

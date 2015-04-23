@@ -22,7 +22,7 @@ public class PantallaInicio extends JPanel {
 		JLabel label_2 = new JLabel("Pantalla Inicio");
 		label_2.setBounds(1057, 11, 131, 14);
 		add(label_2);
-		imgFondo.setBounds(27, 0, 1600, 591);
+		imgFondo.setBounds(27, 0, 1300, 591);
 		imgFondo.setIcon(new ImageIcon(iFondo));
 		this.add(imgFondo);
 		
@@ -31,3 +31,4 @@ public class PantallaInicio extends JPanel {
 		
 	}
 }
+ 
