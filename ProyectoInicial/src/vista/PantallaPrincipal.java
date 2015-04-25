@@ -33,7 +33,7 @@ public class PantallaPrincipal extends JFrame {
 	public PantallaPrincipal() {
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(000, 000, 1355, 725);
+		setBounds(005, 000, 1355, 725);
 		contentPane = new JPanel();
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
