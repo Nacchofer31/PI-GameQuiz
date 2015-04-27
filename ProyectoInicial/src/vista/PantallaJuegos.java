@@ -16,7 +16,7 @@ public class PantallaJuegos extends JPanel {
 		//IMAGEN DE FONDO
 		Image iFondo = new ImageIcon(this.getClass().getResource("/Fondo.png")).getImage();
 		JLabel imgFondo = new JLabel("/Fondo.png");
-		imgFondo.setBounds(27, 0, 1300, 591);
+		imgFondo.setBounds(0, 0, 1355, 600);
 		imgFondo.setIcon(new ImageIcon(iFondo));
 		this.add(imgFondo);
 

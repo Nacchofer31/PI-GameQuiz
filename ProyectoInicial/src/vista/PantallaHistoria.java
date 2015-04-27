@@ -17,7 +17,7 @@ public class PantallaHistoria extends JPanel {
 	public PantallaHistoria() {
 
 		setLayout(null);
-		setBounds(0, 105, 1355, 591);
+		setBounds(0, 0, 1355, 600);
 		
 		//Letras
 		Image iLetrasHistoria = new ImageIcon(this.getClass().getResource("/LetrasHistoria.png")).getImage();
@@ -88,7 +88,7 @@ public class PantallaHistoria extends JPanel {
 		//IMAGEN DE FONDO
 		Image iFondo = new ImageIcon(this.getClass().getResource("/Fondo.png")).getImage();
 		JLabel imgFondo = new JLabel("/Fondo.png");
-		imgFondo.setBounds(27, 0, 1600, 591);
+		imgFondo.setBounds(0, 0, 1355, 600);
 		imgFondo.setIcon(new ImageIcon(iFondo));
 		this.add(imgFondo);
 		

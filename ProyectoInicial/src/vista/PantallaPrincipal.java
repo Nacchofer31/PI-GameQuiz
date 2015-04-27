@@ -39,7 +39,7 @@ public class PantallaPrincipal extends JFrame {
 		contentPane.setLayout(null);
 		
 		// JPanel para las pantallas
-		panelPantallas.setBounds(0, 105, 1355, 591);
+		panelPantallas.setBounds(0, 105, 1355, 605);
 		contentPane.add(panelPantallas);
 		this.setResizable(false);
 		panelPantallas.setLayout(new CardLayout(0, 0));
@@ -100,8 +100,8 @@ public class PantallaPrincipal extends JFrame {
 			}
 		});
 		
-		Image imgHeader = new ImageIcon(this.getClass().getResource("/MuroPiedras.png")).getImage();
-		btnInicio.setBounds(150, 10, 150, 75);
+		Image imgHeader = new ImageIcon(this.getClass().getResource("/MuroMaderas.png")).getImage();
+		btnInicio.setBounds(150, 10, 150, 80);
 		panelBotones.add(btnInicio);
 		
 		//Boton Historia
@@ -208,13 +208,13 @@ public class PantallaPrincipal extends JFrame {
 		
 		//MARCO BAJO BOTONES SOBRE PANTALLA
 		JPanel panel = new JPanel();
-		panel.setBounds(0, 84, 1355, 23);
+		panel.setBounds(0, 84, 1355, 30);
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
 		Image imgBar = new ImageIcon(this.getClass().getResource("/bar.png")).getImage();
 		JLabel label = new JLabel("");
-		label.setBounds(0, 0, 1355, 23);
+		label.setBounds(0, 0, 1355, 30);
 		label.setIcon(new ImageIcon(imgBar));
 		panel.add(label);
 	

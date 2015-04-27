@@ -13,18 +13,20 @@ public class PantallaInicio extends JPanel {
 
 	public PantallaInicio() {
 		setLayout(null);
-		setBounds(0, 105, 1355, 591);
+		setBounds(0, 0, 1355, 600);
 				
 		
-		//IMAGEN DE FONDO
-		JLabel imgFondo = new JLabel("/Fondo.png");
-
+		//IMAGEN DE FONDO	
 		Image iFondo = new ImageIcon(this.getClass().getResource("/Fondo.png")).getImage();
+		JLabel imgFondo = new JLabel("/Fondo.png");
+		imgFondo.setBounds(0, 0, 1355, 605);
+		imgFondo.setIcon(new ImageIcon(iFondo));
+		this.add(imgFondo);
 		
-		JLabel lblBienvenido = new JLabel("\u00A1Bienvenido a GAME QUIZ!");
+		JLabel lblBienvenido = new JLabel("\u00A1Bienvenidos a GAME QUIZ!");
 		lblBienvenido.setFont(new Font("BatangChe", Font.BOLD, 32));
 		lblBienvenido.setForeground(Color.WHITE);
-		lblBienvenido.setBounds(448, 38, 458, 76);
+		lblBienvenido.setBounds(448, 38, 475, 76);
 		add(lblBienvenido);
 		
 		JLabel lblHistoria = new JLabel(">Historia...........Estudia las principales d\u00E9cadas de la Historia de  los Videojuegos.");
@@ -64,7 +66,7 @@ public class PantallaInicio extends JPanel {
 		JSeparator separator_1 = new JSeparator();
 		separator_1.setBounds(188, 136, 1019, 11);
 		add(separator_1);
-		imgFondo.setBounds(27, 0, 1300, 591);
+		imgFondo.setBounds(0, 0, 1355, 600);
 		imgFondo.setIcon(new ImageIcon(iFondo));
 		this.add(imgFondo);
 		
