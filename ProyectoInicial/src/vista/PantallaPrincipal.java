@@ -100,7 +100,7 @@ public class PantallaPrincipal extends JFrame {
 			}
 		});
 		
-		Image imgHeader = new ImageIcon(this.getClass().getResource("/MuroMaderas.png")).getImage();
+		Image imgHeader = new ImageIcon(this.getClass().getResource("/MuroMadera.png")).getImage();
 		btnInicio.setBounds(150, 10, 150, 80);
 		panelBotones.add(btnInicio);
 		
@@ -213,10 +213,10 @@ public class PantallaPrincipal extends JFrame {
 		panel.setLayout(null);
 		
 		Image imgBar = new ImageIcon(this.getClass().getResource("/bar.png")).getImage();
-		JLabel label = new JLabel("");
-		label.setBounds(0, 0, 1355, 30);
-		label.setIcon(new ImageIcon(imgBar));
-		panel.add(label);
+		JLabel labelMuroMadera = new JLabel("");
+		labelMuroMadera.setBounds(0, 0, 1355, 30);
+		labelMuroMadera.setIcon(new ImageIcon(imgBar));
+		panel.add(labelMuroMadera);
 	
 	}
 	
